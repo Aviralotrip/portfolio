@@ -1,0 +1,179 @@
+@font-face {
+    font-family: bojack;
+    src: url(ness/ness.ttf);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    scroll-behavior: smooth;
+    font-family:"bojack";
+}
+:root{
+    --bg-color: #1f242d;
+    --about-bg-color: #3e1f47;
+    --text-color:#fff;
+    --main-color:#0ef;
+    --about-color:#006466;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+}
+h1{
+    font-size: 3rem;
+    font-family: 'bojack';
+}
+h3{
+    font-size: 2.1rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:2rem 9%;
+    background: var(--bg-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color:var(--text-color);
+    cursor:default;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color:var(--text-color);
+    margin-left:4rem;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:var(--main-color);
+}
+.home{
+    min-height: 100vh;
+    color: var(--text-color);
+    /* margin-top: 3.5rem; */
+    padding:10rem; 
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ 
+p span{
+    position: relative;
+    color:var(--main-color);
+}
+p span::after{
+    content:"";
+    height: 100%;
+    left:0;
+    width: 100%;
+    position:absolute;
+    background-color:var(--bg-color);
+    letter-spacing: .15em;
+    border-left:1px solid var(--main-color);
+    animation:typing 3s steps(27) infinite;
+    
+   /* animation-delay: 1s;*/
+}
+@keyframes typing {
+    50%{
+        left: 105%;
+    }
+    100%{
+        right: 110%;
+    }
+}
+.text{
+    margin-right:3.3rem;
+}
+.text h1{
+    color:var(--main-color);
+}
+.profile-image {
+    margin-left:8rem;
+    
+}
+#profile-image{
+    border: 2px solid var(--main-color);
+    box-shadow: 0px 0px 57px -3px var(--main-color);
+}
+
+#profile-image:hover {
+     cursor: pointer;
+    /* margin-top:2px; */
+    animation:slide 8s  infinite;
+    animation-delay: 0.3s;
+}
+@keyframes slide{
+    0%{
+        box-shadow: 0px 0px 57px -3px var(--main-color) ;
+        
+    }
+    50%{
+        box-shadow: 0px 0px 57px -20px var(--main-color) ;
+        
+    }
+    100%{
+        box-shadow: 0px 0px 57px -3px var(--main-color) ;
+        
+    }
+}
+#btn{
+    background-color:var(--main-color);
+    color:white;
+    box-shadow: 0px 0px 57px -10px var(--main-color);
+    text-decoration: none;
+    border-radius: 20px;
+    border:2px solid var(--main-color);
+    padding:0.5rem;
+    /* position: relative; */
+    margin-top: 5rem;
+    transition:0.5s ease;
+}
+#btn:hover{
+   background-color: var(--bg-color);
+   color:var(--text-color);
+}
+.text .btn{
+    margin-top: 5rem;
+}
+.btn{
+    margin-top: 6rem;
+    margin-right: 1rem;
+}
+.about{
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+    color:var(--about-color)
+}
+.about-content{
+    display: flex;
+     padding: 6rem;
+     padding-top: 9rem;
+}
+.about-text{
+    margin-left: 6rem;
+}
