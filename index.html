@@ -17,19 +17,28 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
+
+
+
     <!-- header design -->
+
+
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
+
+
     <!-- section home -->
 
-    <section class="home">
+
+
+    <section class="home" id="home">
       <div class="text">
         <h3>Hello, It's me</h3>
         <h1>Bojack Horseman</h1>
@@ -47,18 +56,29 @@
         />
       </div>
     </section>
+
+
+
+
     <!-- section about  -->
-    <section class="about" data-aos="fade-left">
+
+
+
+
+
+
+    <section class="about" data-aos="fade-left" id="about">
       <div class="about-content">
         <div class="profile-image">
           <img
             src="images/bjackh2.webp"
             alt=""
             style="height: 14rem"
-            id="profile-image"
+            id="about-image"
+            data-aos="fade-right"
           />
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left" >
           <p>
             BoJack F. Horseman (born January 2, 1964) is a fictional character
             and the titular protagonist of the Netflix animated television
@@ -75,7 +95,18 @@
         </div>
       </div>
     </section>
-    <section class="services">
+
+
+
+
+    <!-- section sercices -->
+
+
+
+
+
+
+    <section class="services" id="services">
       <div class="bx profile-image" id="profile-image" data-aos="fade-right">
         <div class="services-image">
           <img src="images/bjack3.avif" alt="" style="height: 7rem" />
@@ -138,8 +169,20 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
     <!-- section contact Me  -->
-    <section class="contact">
+
+
+
+
+
+
+    <section class="contact" id="contact">
       <form action="">
         <div class="contact-content" data-aos="flip-left" >
           <div class="text">CONTACT <span>ME!</span></div>
@@ -163,12 +206,28 @@
         </div>
       </form>
     </section>
-    <footer class="footer">
+
+
+
+
+    <!-- section footer  -->
+
+
+
+
+
+    <footer class="footer" data-aos="fade-right">
         <div class="social-media">
-          <box-icon type='logo' name='github' class="icons" size="md" color="#0ef" animation='tada-hover'></box-icon>
-          <box-icon type='logo' name='linkedin'  class="icons" size="md" color="#0ef" animation='tada-hover'></box-icon>
-          <box-icon type='logo' name='instagram'  class="icons" size="md" color="#0ef" animation='tada-hover'></box-icon>
+          <box-icon type='logo' name='github' class="icons" size="md" color="#FA7D09" animation='tada-hover'></box-icon>
+          <box-icon type='logo' name='linkedin'  class="icons" size="md" color="#FA7D09" animation='tada-hover'></box-icon>
+          <box-icon type='logo' name='instagram'  class="icons" size="md" color="#FA7D09" animation='tada-hover'></box-icon>
         </div>
+        <div class="help">
+          <input type="text" name="" id="help" placeholder="How Can I Help ?">
+          <button id="">HELP</button>
+        </div>
+        <div class="credit">
+        <i data-aos="fade-left">-Designed By Aviral Tripathi</i></div>
     </footer>
   </body>
   <script src="script.js"></script>

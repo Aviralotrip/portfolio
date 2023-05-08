@@ -12,14 +12,29 @@
     font-family:"bojack";
     resize: none;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 :root{
     --bg-color: #1f242d;
-    --about-bg-color: #3e1f47;
+    --about-bg-color: #2F2519;
     --text-color:#fff;
     --main-color:#0ef;
-    --about-color:#006466;
+    --about-color:#FF4301;
     --footer-color:#393646;
 }
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
 html{
     overflow-x: hidden;
 }
@@ -79,6 +94,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -169,15 +185,41 @@ p span::after{
 .about{
     min-height: 100vh;
     background-color: var(--about-bg-color);
-    color:var(--about-color)
+    color:var(--about-color);
+    font-weight: 700;
+}
+#about-image{
+    box-shadow: 0px 0px 57px -8px var(--about-color);
+    border: 2px solid var(--main-color);
+}
+#about-image:hover {
+    cursor: pointer;
+   /* margin-top:2px; */
+   animation:slide2 4s  infinite;
+   animation-delay: 0.3s;
+}
+@keyframes slide2{
+   0%{
+       box-shadow: 0px 0px 57px -8px var(--about-color) ;
+       
+   }
+   50%{
+       box-shadow: 0px 0px 57px -50px var(--about-color) ;
+       
+   }
+   100%{
+       box-shadow: 0px 0px 57px -8px var(--about-color) ;
+       
+   }
 }
 .about-content{
     display: flex;
+    flex-wrap: wrap;
      padding: 6rem;
      padding-top: 9rem;
 }
 .about-text{
-    margin-left: 6rem;
+    margin-top: 6rem;
 }
 
 
@@ -186,6 +228,7 @@ p span::after{
     flex-wrap: wrap;
     min-height: 100vh;
     background-color: var(--bg-color);
+    padding-top: 5rem;
    
     
 }
@@ -210,7 +253,7 @@ p span::after{
     align-items: center;
 }
 .contact-content{
-    margin-top:15rem;
+    margin-top:5rem;
     background-color: var(--bg-color);
     width:40rem;
     padding:1rem;
@@ -225,9 +268,11 @@ input{
     margin-bottom: 1rem;
     padding: 0.4rem;
     color:var(--text-color);
-    font-size:1.5rem;
+    font-size:1rem;
     font-weight: 600;
     text-align: center;
+    background-color: var(--about-color);
+    
 }
 span{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     color:var(--main-color);
@@ -263,7 +308,7 @@ textarea{
     margin-bottom: 1rem;
     padding: 0.4rem;
     color:var(--text-color);
-    font-size:1.5rem;
+    font-size:1rem;
     font-weight: 600;
     text-align: center;
     border: 2px solid var(--about-color);
@@ -272,18 +317,18 @@ textarea{
     
 }
 #submit{
-    background-color:var(--main-color);
+    background-color:var(--about-color);
     color:white;
-    box-shadow: 0px 0px 57px -15px var(--main-color);
+    box-shadow: 0px 0px 57px -15px var(--about-color);
     text-decoration: none;
     border-radius: 20px;
     font-size: 1rem;
-    border:2px solid var(--main-color);
+    border:2px solid var(--about-color);
     padding:0.8rem;
     /* position: relative; */
     margin-top: 5rem;
     transition:0.5s ease;
-    font-weight: 500;
+    font-weight: 600;
 }
 #submit:hover{
     background-color: var(--bg-color);
@@ -304,6 +349,44 @@ textarea{
 .icons{
     margin-top: 5rem;
     margin-left:5rem;
-    
-
+    cursor: pointer;
 }
+.help{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:4rem;
+    
+}
+#help{
+    margin-right:3rem;
+}
+#help input{
+    width:20rem;
+}
+.help button {
+    background-color:greenyellow;
+    color:white;
+    box-shadow: 0px 0px 57px -15px var(--about-color);
+    text-decoration: none;
+   margin-top: -1rem;
+    font-size: 1.2rem;
+    
+    padding:0.4rem;
+    /* position: relative; */
+    
+    transition:0.5s ease;
+    font-weight: bolder;
+}
+#help button:hover{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+ }
+ .credit{
+    display:flex;
+    /* text-align: center; 
+    */
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+ }
