@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
@@ -23,15 +24,24 @@
     <!-- header design -->
 
 
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    
+      
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class="logo">Portfolio</label>
+      <ul>
+      
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  
 
 
     <!-- section home -->
@@ -51,7 +61,7 @@
         <img
           src="images/bjackh.jpg"
           alt=""
-          style="height: 14rem"
+          
           id="profile-image"
         />
       </div>
@@ -67,7 +77,7 @@
 
 
 
-    <section class="about" data-aos="fade-left" id="about">
+    <section class="about"  id="about">
       <div class="about-content">
         <div class="profile-image">
           <img
@@ -112,7 +122,7 @@
           <img src="images/bjack3.avif" alt="" style="height: 7rem" />
           <div class="text">
             Sometimes I feel like I was born with a leak, and any goodness I
-            started with just slowly spilled out of me, and now it's all gone.
+            started with just slowly spilled out of me 
           </div>
         </div>
       </div>
@@ -126,7 +136,7 @@
           />
           <div class="text">
             I don’t understand how people… live. It’s amazing to me that people
-            wake up every morning and say: ‘Yeah, another day, let’s do it.
+            wake up.
           </div>
         </div>
       </div>
@@ -136,9 +146,7 @@
         </div>
         <div class="text">
           Settle. Because otherwise you’re just gonna get older and harder, and
-          more alone. And you’re gonna do everything you can to fill that hole,
-          with friends, and your career, and meaningless sex, but the hole
-          doesn’t get filled
+          more alone. And you’re gonna 
         </div>
       </div>
       <div class="bx profile-image" id="profile-image" data-aos="fade-right">
@@ -230,6 +238,7 @@
         <i data-aos="fade-left">-Designed By Aviral Tripathi</i></div>
     </footer>
   </body>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
