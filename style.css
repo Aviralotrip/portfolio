@@ -390,12 +390,7 @@ span{
     width:49%;
     background-color:var(--about-color);
 }
-.contact-email input{
-    border: 2px solid var(--about-color);
-    border-radius:3rem;
-    width:99%;
-    background-color:var(--about-color);
-}
+
 textarea{
     background-color: var(--about-color);
     margin-bottom: 1rem;
